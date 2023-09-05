@@ -19,8 +19,6 @@ export default function Navbar() {
         className="
           py-4 
           border-b-[1px]
-          
-          
         "
       >
         <Container>
