@@ -1,8 +1,14 @@
+/*
+ * @Author: Li yli2935@uwo.ca
+ * @Date: 2023-09-03 15:55:06
+ * @LastEditors: Li yli2935@uwo.ca
+ * @LastEditTime: 2023-09-03 16:26:57
+ * @FilePath: /airbnb/app/layout.tsx
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import Navbar from '@/app/components/navbar/Navbar';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +22,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <Navbar />
+      <body>{children}</body>
     </html>
   )
 }
