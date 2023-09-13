@@ -75,7 +75,7 @@ const Search = () => {
               mr-2
             "
           >
-            <BiSearch size={18} />
+            <BiSearch onClick={()=> console.log("aaaa")} size={18} />
           </div>
       </div>
     </div>

@@ -11,14 +11,15 @@ const UserMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const toggleOpen = useCallback(() => {
+    console.log("here")
     setIsOpen((value) => !value);
   }, []);
-
+ 
   return (
     <div className="relative">
       <div className="flex flex-row items-center gap-3">
         <div
-          onClick={() => {}}
+          onClick={()=>{}}
           className="
                 hidden
                 md:block
@@ -34,6 +35,7 @@ const UserMenu = () => {
         >
           Airbnb your home
         </div>
+        
         <div
           onClick={toggleOpen}
           className="
@@ -58,6 +60,7 @@ const UserMenu = () => {
           </div>
         </div>
       </div>
+
       {isOpen && (
         <>
           <div
